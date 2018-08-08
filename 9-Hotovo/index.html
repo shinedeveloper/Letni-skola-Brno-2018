@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Moje první hra</title>
+
+    <link rel="stylesheet" href="styly.css">
+</head>
+
+<!--
+na <body> připojíme obsluhu události:
+onkeydown se spustí při stisku klávesy - má parametr event, ve které se předá kód stisknuté klávesy
+-->
+<body onkeydown="priStiskuKlavesy(event);">
+
+    <!-- řádek s textem, kde budeme počítat sebrané objektMince -->
+    <p class="vysledek">Sebráno mincí: <span id="skore">0</span></p>
+
+    <!-- mimozemšťan, id="alien" -->
+    <img id="alien" src="obrazky/alien.png">
+
+    <!-- předmět k sebrání, id="mince" -->
+    <img id="mince" src="obrazky/mince.png">
+
+    <!-- zvuky -->
+    <audio id="zvukmince" src="zvuky/mince.wav"></audio>
+    <audio id="zvukfanfara" src="zvuky/fanfara.wav"></audio>
+
+
+    <!-- soubor s naším javascriptovým programem -->
+    <script src="program.js"></script>
+</body>
+</html>

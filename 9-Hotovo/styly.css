@@ -1,0 +1,23 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #b1d9ed;
+}
+
+#alien,
+#mince {
+    display: block;
+    position: absolute;
+}
+
+.vysledek {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#skore {
+    color: red;
+}
